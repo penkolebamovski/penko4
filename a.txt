@@ -1,1 +1,21 @@
 	Choose a method
+
+	/**
+     * Method solve the greatest common divisor of two numbers entered by the user the name is nod
+     * @param a the first number
+     * @param b the second number
+     * @return the lowest common denominator
+     */
+    public int nod(int a, int b) {
+
+        while (a != b) {
+            if (a > b) {
+                a = a - b;
+            } else {
+                b = b - a;
+
+                return b;
+            }
+        }
+        return a;
+    }
